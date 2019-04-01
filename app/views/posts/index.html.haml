@@ -1,0 +1,15 @@
+%header
+  %h2 Latest Posts
+  %p#notice= notice
+  %p= link_to 'New Post', new_post_path
+
+%ul.posts
+  - @posts.each do |post|
+    %li
+      %article
+        %h3= link_to post.title, post
+        %p.byline= post.author.name
+        = post.content
+        %ul.controls
+          %li= link_to 'Edit', edit_post_path(post)
+          %li= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }

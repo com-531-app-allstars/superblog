@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+good_post:
+  title: A Nice Title
+  slug: a-nice-title
+  content: Some content.
+  author: karl
+  tags: general, fyi
+
+missing_title:
+  title:
+  slug: missing-title
+  content: Some content.
+  author: hank
+  tags: general
